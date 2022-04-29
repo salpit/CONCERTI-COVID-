@@ -1,6 +1,6 @@
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
-const galleryControls = ['previous', 'next'];
+const galleryControls = ['❮','❯'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 
 class Carousel {
@@ -29,7 +29,7 @@ class Carousel {
   // Update the current order of the carouselArray and gallery
   setCurrentState(direction) {
 
-    if (direction.className == 'gallery-controls-previous') {
+    if (direction.className == 'gallery-controls-control_next') {
       this.carouselArray.unshift(this.carouselArray.pop());
     } else {
       this.carouselArray.push(this.carouselArray.shift());
@@ -88,6 +88,7 @@ class Carousel {
 
       });
     });
+    
   }
 }
 
@@ -96,3 +97,4 @@ const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryCont
 exampleCarousel.setControls();
 // exampleCarousel.setNav();
 exampleCarousel.useControls();
+
