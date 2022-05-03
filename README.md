@@ -1,1 +1,1 @@
-Design a dataviz website on the topic of Covid&Concerts, in collaboration with Lab24 part of Sole 24 Ore and under the supervision of Matteo Moretti during the course of Design of Interaction systems for information
+Design a dataviz website on the topic of Covid&Concerts, in collaboration with Lab24 part of Sole 24 Ore, under the supervision of Matteo Moretti during the course of Design of Interaction systems for information
