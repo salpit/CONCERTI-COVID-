@@ -1,0 +1,127 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+  font-family: 'Sole24Sans';
+  font-weight: Semibold;
+	line-height: 1;
+  background-color: black;
+  overflow-x: hidden;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.layout {
+border: 0.5px solid red;
+width: 65vw;
+margin: auto;
+display: block;
+}
+
+.mobile{
+display: none;
+}
+
+.menu {
+  color: white;
+  padding: 20px;
+}
+
+.header {
+height: 60px;
+display: flex;
+background-color: black;
+align-items: center;
+justify-content:space-between;
+position: fixed;
+width: 100vw;
+z-index: 100;
+border-bottom: 0.5px solid white;
+}
+
+.footer {
+border: 1px solid red;
+height: 150px;
+background-color: black;
+width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.footer_text {
+color: white;
+margin: 0 auto;
+font-weight: 300;
+font-size: 1em;
+line-height: 1.2em;
+text-align: center;
+}
+
+
+@media screen and (max-width: 768px){
+
+.layout {
+display: none;
+}
+
+.layoutmobile{
+  border: 0.5px solid blue;
+  width: 75vw;
+  margin: auto;
+  display: block;
+}
+
+}
+
+
+@media screen and (max-width: 375px){
+
+.layout {
+display: none;
+}
+
+.layoutmobile{
+  border: 0.5px solid yellow;
+  width: 90vw;
+  margin: auto;
+  display: block;
+}
+
+}
