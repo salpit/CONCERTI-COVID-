@@ -1,0 +1,58 @@
+.titolo1 h1  {
+margin-top: 10vh;
+border: 0.3px solid red;
+
+color:white;
+
+}
+
+.titolo2 h1  {
+margin-top: 10vh;
+align-items: center;
+border: 0.3px solid red;
+
+color:white;
+
+}
+
+.titolo3 h1  {
+margin-top: 10vh;
+align-items: center;
+border: 0.3px solid red;
+
+color:white;
+
+}
+
+.titolo4 h1  {
+
+padding-bottom: 5vh;
+align-items: center;
+border: 0.3px solid red;
+color:white;
+
+}
+
+.fontigoogle {
+border: 0.3px solid red;
+font-weight: 200;
+margin-bottom: 8vh;
+align-items: center;
+width: 100%;
+text-align: center;
+color: white ;
+opacity: 0.4;
+}
+
+
+.fonti1 {
+border: 0.3px solid red;
+font-weight: 200;
+margin-top: 8vh;
+align-items: center;
+width: 100%;
+text-align: center;
+color: white ;
+opacity: 0.4;
+
+}
