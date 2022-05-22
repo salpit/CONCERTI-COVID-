@@ -35,15 +35,18 @@ svg rect.quadratini {
 #demo {
   margin-top: 3vh;
   display: flex;
-  height: 50%;
+  /* height: 50%; */
   align-content: flex-start;
   font-size: 3em;
   color: white;
-  margin-left: -10vh;
+  /* margin-left: -10vh; */
+  width: 30%;
 }
-
+.biglietto_strappato{
+  width: 30%;
+}
 .biglietto_strappato svg {
-  width: 80%;
+  /* width: 80%; */
   transform: rotate(28deg);
 }
 
@@ -58,7 +61,7 @@ svg rect.quadratini {
   display: flex;
   align-items: center;
   font-size: 1.5em;
-  width: 25%;
+  width: 30%;
   color: white;
 }
 
@@ -67,7 +70,7 @@ svg rect.quadratini {
   width: 60%;
   display: flex;
   justify-content: space-between;
-  margin-top: -10vh;
+  /* margin-top: -10vh; */
 }
 
 .select {
