@@ -16,7 +16,7 @@ svg rect.quadratini {
   margin: 0 auto;
   align-items: center;
   width: 60%;
-  margin-top: -3vh;
+  border: solid 1px red;
 }
 
 .boxslider {
@@ -33,6 +33,7 @@ svg rect.quadratini {
 }
 
 #demo {
+  border: 1px solid red;
   margin-top: 3vh;
   display: flex;
   /* height: 50%; */
@@ -42,15 +43,15 @@ svg rect.quadratini {
   /* margin-left: -10vh; */
   width: 30%;
 }
-.biglietto_strappato{
-  width: 30%;
-}
+
 .biglietto_strappato svg {
   /* width: 80%; */
   transform: rotate(28deg);
+  width: 75%;
 }
 
 .total {
+  border: 1px solid red;
   display: flex;
   width: 30%;
   display: flex;
@@ -58,17 +59,18 @@ svg rect.quadratini {
 }
 
 #ingr {
+  border: 1px solid red;
   display: flex;
   align-items: center;
   font-size: 1.5em;
-  width: 30%;
+  width: 25%;
   color: white;
 }
 
 .inferiore {
   display: flex;
+  border: 1px solid red;
   width: 60%;
-  display: flex;
   justify-content: space-between;
   /* margin-top: -10vh; */
 }
@@ -157,6 +159,7 @@ svg rect.quadratini {
 }
 
 @media screen and (max-width: 1200px) {
+
   .container {
     display: flex;
     margin: 0 auto;
@@ -173,9 +176,17 @@ svg rect.quadratini {
   }
 
   .inferiore {
-    margin-top: -10vh;
     display: flex;
     width: 80%;
+    justify-content: space-between;
+    /* margin-top: -10vh; */
+  }
+
+  .biglietto_strappato svg {
+    /* width: 80%; */
+    transform: rotate(28deg);
+    margin-top: 3vh;
+    width: 75%;
   }
 
   #demo {
@@ -198,6 +209,7 @@ svg rect.quadratini {
 }
 
 @media screen and (max-width: 1024px) {
+
   .container {
     display: flex;
     margin: 0 auto;
@@ -214,9 +226,17 @@ svg rect.quadratini {
   }
 
   .inferiore {
-    margin-top: -10vh;
     display: flex;
     width: 70%;
+    justify-content: space-between;
+    /* margin-top: -10vh; */
+  }
+
+  .biglietto_strappato svg {
+    /* width: 80%; */
+    transform: rotate(28deg);
+    margin-top: 3vh;
+    width: 75%;
   }
 
   #demo {
@@ -239,6 +259,7 @@ svg rect.quadratini {
 }
 
 @media screen and (max-width: 768px) {
+
   .container {
     margin: 0 auto;
     align-items: center;
@@ -254,18 +275,17 @@ svg rect.quadratini {
   }
 
   .inferiore {
-    margin-top: -7vh;
     display: flex;
     width: 90%;
-    display: flex;
     justify-content: space-between;
+    /* margin-top: -10vh; */
   }
 
-  .inferiore {
-    padding-top: 5vh;
-    margin-top: -10vh;
-    display: flex;
-    width: 90%;
+  .biglietto_strappato svg {
+    /* width: 80%; */
+    transform: rotate(28deg);
+    margin-top: 3vh;
+    width: 75%;
   }
 
   #demo {
@@ -278,21 +298,18 @@ svg rect.quadratini {
     margin-bottom: 4vh;
   }
 
-  .biglietto_strappato svg {
-    width: 80%;
-    transform: rotate(28deg);
-  }
 
   #ingr {
     display: flex;
     align-items: center;
     font-size: 1.5em;
-    width: 30%;
+    width: 25%;
     color: white;
   }
 }
 
 @media screen and (max-width: 480px) {
+
   .boxslider {
     display: flex;
     display: flex;
@@ -315,10 +332,16 @@ svg rect.quadratini {
   }
 
   .inferiore {
-    padding-top: 5vh;
-    margin-top: -10vh;
     display: flex;
-    width: 100%;
+    width: 90%;
+    justify-content: space-between;
+    /* margin-top: -10vh; */
+  }
+
+  .biglietto_strappato svg {
+    /* width: 80%; */
+    transform: rotate(28deg);
+    width: 75%;
   }
 
   #demo {
@@ -331,21 +354,17 @@ svg rect.quadratini {
     margin-left: -2vh;
   }
 
-  .biglietto_strappato svg {
-    width: 80%;
-    transform: rotate(28deg);
-  }
-
   #ingr {
     display: flex;
     align-items: center;
     font-size: 1.5em;
-    width: 30%;
+    width: 25%;
     color: white;
   }
 }
 
 @media screen and (max-width: 375px) {
+
   .boxslider {
     display: flex;
     display: flex;
@@ -356,8 +375,6 @@ svg rect.quadratini {
   .container {
     margin: 0 auto;
     align-items: center;
-    width: 100%;
-    height: 100%
   }
 
   .divisore {
@@ -368,32 +385,33 @@ svg rect.quadratini {
   }
 
   .inferiore {
-    padding-top: 5vh;
-    margin-top: -10vh;
     display: flex;
     width: 100%;
-  }
-
-  #demo {
-    margin-top: 3vh;
-    display: flex;
-    height: 50%;
-    align-content: flex-start;
-    font-size: 3em;
-    color: white;
-    margin-left: -2vh;
+    justify-content: space-between;
+    /* margin-top: -10vh; */
   }
 
   .biglietto_strappato svg {
-    width: 80%;
+    /* width: 80%; */
     transform: rotate(28deg);
+    margin-top: 3vh;
+    width: 75%;
   }
+
+  #demo {
+    margin-top: 6vh;
+    display: flex;
+    height: 50%;
+    font-size: 3em;
+    color: white;
+  }
+
 
   #ingr {
     display: flex;
     align-items: center;
     font-size: 1.5em;
-    width: 30%;
+    width: 25%;
     color: white;
   }
 }
