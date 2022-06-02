@@ -1,0 +1,400 @@
+svg rect.quadratini {
+  transition: all 0.9s;
+  fill: grey;
+  animation-delay: 0.2;
+}
+
+.postiasedere {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 60%;
+}
+
+.boxslider {
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: 6vh;
+}
+
+.divisore {
+  display: flex;
+  width: 19vw;
+  height: 30px;
+  margin: auto;
+}
+
+#demo {
+  margin-top: 3vh;
+  display: flex;
+  /* height: 50%; */
+  align-content: flex-start;
+  font-size: 3em;
+  color: white;
+  /* margin-left: -10vh; */
+  width: 30%;
+}
+
+.biglietto_strappato svg {
+  /* width: 80%; */
+  margin-left: 5vw;
+  rotate: -28deg;
+  margin-bottom: 2vh;
+}
+
+.total {
+  display: flex;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#ingr {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  width: 25%;
+  color: white;
+}
+
+.inferiore {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  /* margin-top: -10vh; */
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  color: white;
+  width: 140px;
+  height: 40px;
+  border: 1px solid white;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  padding: 8px 15px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-color: white transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+
+.select-styled:hover {
+  background-color: black;
+}
+
+.select-styled:active, .select-styled.active {
+  background-color: black;
+}
+
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent white transparent;
+}
+
+.select-options {
+  border: 1px solid white;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: black;
+}
+
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  border-top: 1px solid black;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+.select-options li:hover, .select-options li.is-selected {
+  color: black;
+  background: white;
+}
+
+.select-options li[rel="hide"] {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .container {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 80%;
+    margin-top: -3vh;
+  }
+
+  .divisore {
+    display: flex;
+    width: 28vw;
+    height: 30px;
+    margin: auto;
+  }
+
+  .inferiore {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    /* margin-top: -10vh; */
+  }
+
+  .biglietto_strappato svg {
+    /* width: 80%; */
+    transform: rotate(28deg);
+    margin-top: 3vh;
+    width: 75%;
+  }
+
+  #demo {
+    margin-top: 3vh;
+    display: flex;
+    height: 50%;
+    align-content: flex-start;
+    font-size: 3em;
+    color: white;
+    margin-left: -10vh;
+  }
+
+  #ingr {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    width: 25%;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .container {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 70%;
+    margin-top: -3vh;
+  }
+
+  .divisore {
+    display: flex;
+    width: 28vw;
+    height: 30px;
+    margin: auto;
+  }
+
+  .inferiore {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    /* margin-top: -10vh; */
+  }
+
+  .biglietto_strappato svg {
+    /* width: 80%; */
+    transform: rotate(28deg);
+    margin-top: 3vh;
+    width: 75%;
+  }
+
+  #demo {
+    margin-top: 3vh;
+    display: flex;
+    height: 50%;
+    align-content: flex-start;
+    font-size: 3em;
+    color: white;
+    margin-left: -10vh;
+  }
+
+  #ingr {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    width: 25%;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+    margin-top: -3vh;
+  }
+
+  .divisore {
+    display: flex;
+    width: 33vw;
+    height: 30px;
+    margin: auto;
+  }
+
+  .inferiore {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    /* margin-top: -10vh; */
+  }
+
+  .biglietto_strappato svg {
+    /* width: 80%; */
+    transform: rotate(28deg);
+    margin-top: 3vh;
+    width: 75%;
+  }
+
+  #demo {
+    display: flex;
+    height: 50%;
+    align-content: flex-start;
+    font-size: 3em;
+    color: white;
+    margin-left: 1vw;
+    margin-bottom: 4vh;
+  }
+
+
+  #ingr {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    width: 25%;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .boxslider {
+    display: flex;
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+  }
+
+  .container {
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .divisore {
+    display: flex;
+    width: 10vw;
+    height: 30px;
+    margin: auto;
+  }
+
+  .inferiore {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* margin-top: -10vh; */
+  }
+
+
+  #demo {
+    margin-top: 6vh;
+    display: flex;
+    height: 50%;
+    align-content: flex-start;
+    font-size: 3em;
+    color: white;
+    margin-left: 10vw;
+  }
+
+  #ingr {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    width: 50%;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .boxslider {
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+  }
+
+  .container {
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .divisore {
+    display: flex;
+    width: 10vw;
+    height: 30px;
+    margin: auto;
+  }
+
+  .inferiore {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* margin-top: -10vh; */
+  }
+
+  #demo {
+    margin-top: 6vh;
+    display: flex;
+    height: 50%;
+    font-size: 3em;
+    color: white;
+  }
+
+
+  #ingr {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    width: 25%;
+    color: white;
+  }
+}
